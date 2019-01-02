@@ -1,0 +1,8 @@
+---
+#
+# tasks file for codecap.kubectl
+#
+- include: get-last-version.yml
+- include: download.yml
+- include: completion.yml
+  when:    kubectl_conf.install_completion
