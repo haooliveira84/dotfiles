@@ -62,7 +62,7 @@
     - libffi-devel
     - libgit2-devel
     - openssl-devel
-    - libselinux-python
+    - python3-libselinux
     - cockpit
 - name: install misc prereqs
   action: package
