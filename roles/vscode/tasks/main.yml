@@ -24,14 +24,24 @@
 - name: install base vscode extensions
   vscode: name={{ item }} state=present
   with_items:
-    - robertohuertasm.vscode-icons
     - anseki.vscode-color
-    - donjayamanne.githistory
-    - EditorConfig.EditorConfig
-    - PeterJausovec.vscode-docker
-    - DavidAnson.vscode-markdownlint
     - bungcip.better-toml
+    - DavidAnson.vscode-markdownlint
+    - donjayamanne.githistory
+    - eamodio.gitlens
+    - EditorConfig.EditorConfig
+    - KnisterPeter.vscode-github
+    - mauve.terraform
+    - ms-azuretools.vscode-azureterraform
+    - ms-azuretools.vscode-docker
+    - ms-kubernetes-tools.vscode-kubernetes-tools
+    - ms-python.python
+    - ms-vscode.azure-account
+    - redhat.vscode-tekton-pipelines
+    - redhat.vscode-yaml
+    - technosophos.vscode-helm
     - timonwong.shellcheck
+    - vector-of-bool.gitflow
 - name: install web development vscode packages
   vscode: name={{ item }} state=present
   when: editor_webdev_enable
