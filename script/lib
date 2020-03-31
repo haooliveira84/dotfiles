@@ -11,7 +11,7 @@ function __install_deps_redhat() {
 
     sudo $PKG_MGR_CMD install -y \
         ansible \
-        python2-dnf
+        python3-dnf
     sudo grep -qi "$__REDHAT_NO_PASSWD_SUDO" /etc/sudoers || \
         echo "$__REDHAT_NO_PASSWD_SUDO" | \
         sudo tee -a /etc/sudoers > /dev/null
